@@ -14,15 +14,14 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
  
-
-
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
     
@@ -38,6 +37,77 @@
   ======================================================== -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7515801432592092"
      crossorigin="anonymous"></script>
+
+<style>
+  .service {
+      margin-bottom: 20px;
+    }
+    .service .card-img-top {
+      object-fit: cover;
+      max-width: 100%;
+      height: 500px; 
+    }
+
+    .card{
+      border: none;
+    }
+    
+    
+    .ellipsis {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4; /* number of lines to show */
+      -webkit-box-orient: vertical;
+    }
+    .expand-text {
+      display: none;
+    }
+    .expand-link {
+      cursor: pointer;
+      color: blue;
+    }
+    .heading-on-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    @media (max-width: 767px) {
+      .heading-on-image {
+        position: static;
+        transform: none;
+        text-align: left;
+        font-size: 20px;
+        font-weight: normal;
+      }
+
+      
+      .approach-content {
+        display: none;
+      }
+
+      
+      .approach-content2 {
+        display: none;
+      }
+    
+    }
+
+    .service .card-body p:first-child {
+      position: relative;
+    }
+    .service .card-body .makeitcapital p:first-child::first-letter {
+      font-size: 150%; /* Adjust the first letter size as desired */
+      font-weight: bold; /* Optional: Make the first letter bold */
+      margin-right: 6px; /* Optional: Add space between the first letter and the text */
+    }
+
+</style>
+
 </head>
 
 <body>
@@ -56,7 +126,7 @@
               <img src="assets/img/LogoMenuBar.png"  alt="" class="img-fluid"> 
              </div>
             <div class="col-9 mt-3">
-              <div class="row">Squad Accounting Services
+              <div class="row">Squadup Accounting Services
               </div>
               <div class="row" style="font-size: x-small;">
                 <div class="col-1"></div>
@@ -75,7 +145,7 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#steps">Services</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -91,118 +161,311 @@
       <h1>We are team of talented accountants specializing in accounting practices.
         Our experienced team will relieve you of the regulatory burden.
       </h1>
-      <a href="#steps" class="btn-get-started scrollto">Get Started</a>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
     </div>
   </section><!-- End Hero -->
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
 
-        <div class="row">
-          <div class="col-xl-6 col-lg-7" data-aos="fade-right">
-            <img src="assets/img/about-img.jpg" class="img-fluid" alt="">
+  
+
+
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+          <div class="section-title" data-aos="fade-up">
+            <h2>About US</h2>
           </div>
-          <div class="col-xl-6 col-lg-5 pt-5 pt-lg-0">
-            <h3 data-aos="fade-up">About US</h3>
-            <div>
-              <p data-aos="fade-up" class="text-justify lead" style="font-size: medium;">
-                We believe that accounting isn't just about numbers; it's about empowering businesses to thrive. our mission is to
-                redefine traditional accounting practices by offering personalized services that drive growth and efficiency.
-                <br><br>
-              <h5 data-aos="fade-up" class="lead">Our Mission</h5><br>
-             <p data-aos="fade-up"  class="text-justify lead" style="font-size: medium;"> 
-              Our mission is simple yet profound: to empower businesses by providing comprehensive, tailored accounting solutions. We
-              understand that each business is unique, which is why we go beyond traditional services. We delve deep into
-              understanding your goals, challenges, and industry nuances to deliver bespoke strategies that pave the way for your
-              success.
-             </p>
-              <br><br>
-              <h5 data-aos="fade-up" class="lead">Client-Centric Approach</h5><br>
-              <p data-aos="fade-up"  class="text-justify lead" style="font-size: medium;">
-                Our commitment revolves around you. We listen attentively, analyze thoroughly, and strategize collaboratively. Your
-                success is our priority, and we thrive on solving your accounting challenges with innovative, forward-thinking
-                solutions. But don't just take our word for it—explore our client testimonials to witness the impact firsthand.
-               </p>
-              
-              </p>
-              
+          <div class="container">
 
+           
+    
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 service card" data-aos="fade-right">
+                <img src="assets/img/portfolio/portfolio-8.jpg" class="card-img-top img-fluid" alt="" >
+              </div>
+             
+                  
+                 <p data-aos="fade-up"  class="text-justify lead" style="font-size: medium;"> 
+                  At Squadup Accounting Services, we specialize in providing premier accounting outsourcing services tailored to meet the unique financial needs of businesses across Australia, Canada, the UK, and Ireland. With a dedicated team of experienced professionals and a commitment to excellence, we offer comprehensive solutions designed to streamline financial processes and drive sustainable growth for our clients.
+                 </p>
+
+                 <div>
+                  <br> 
+                 </div>
+
+                 <h5 id="approach-toggle" data-aos="fade-up"   class="section-bg"> Our Approach</h5>
+                 <div class="approach-content text-justify lead" data-aos="fade-right"   style="font-size: medium;">
+                   <ul>
+                     <li><b>Customized Solutions - </b> We understand that every business is unique...</li>
+                     <li><b>Expertise - </b> Our team comprises skilled and certified accountants...</li>
+                     <li><b>Cutting-Edge Technology - </b> Leveraging the latest technological...</li>
+                     <li><b>Client-Centric Focus - </b> Building lasting relationships with our clients...</li>
+                   </ul>
+                 </div>
+
+                 <div>
+                  <br> 
+                 </div>
+
+                 <h5 id="approach-toggle2" data-aos="fade-up"   class="section-bg">Services We Offer</h5>
+                 <div class="approach-content2 text-justify lead" data-aos="fade-right"   style="font-size: medium;">
+                   <ul>
+                     <li><b>Bookkeeping - </b> From day-to-day transaction management to maintaining accurate records, our bookkeeping services ensure your financial data is organized and up-to-date.
+                    </li>
+                     <li><b>Tax Compliance - </b> Navigating complex tax regulations can be daunting. Our experts ensure compliance and help minimize tax liabilities while maximizing your benefits.
+                      </li>
+                     <li><b>Financial Reporting - </b> We provide detailed, custom reports that offer valuable insights into your financial health, empowering you to make informed strategic decisions.
+                     </li>
+                     <li><b>Payroll Services - </b> Managing payroll can be time-consuming. Our efficient payroll services ensure timely and accurate compensation for your employees.
+                      </li>
+                      <li>A<b>dvisory Services - </b> Beyond numbers, we offer strategic financial advice to help you optimize resources and achieve your business objectives.
+                      </li>
+                   </ul>
+                 </div>
+
+    
+                </div>
+              </div>
             </div>
+    
+          
           </div>
-        </div>
+        </section><!-- End About Section -->
+    
+    
 
 
-        <div class="row">
-          <div class="col"><br>
-              <h5 data-aos="fade-up" class="lead">Our Values</h5><br>
-              <p data-aos="fade-up"  class="text-justify lead" style="font-size: medium;">
 
-                Transparency, accuracy, and compliance are integral to our operations. We prioritize confidentiality and implement
-                robust security measures to protect your financial data.
-                <br>Let's Get Started!
-                Whether you're a startup or an established enterprise, let's optimize your financial strategies together. Contact us for
-                a consultation and discover how Squad Accounting can be your trusted accounting partner.
-              </p>
+
+        <!-- ======= About Section ======= -->
+        <section id="services" class="about section-bg">
+
+          <div class="section-title" data-aos="fade-up">
+            <h2>Services</h2>
           </div>
-        </div>
+
+
+          <div class="container">
+
+
+            <div class="row" data-aos="fade-up">
+              <div class="col-lg-4 col-md-6 col-sm-12 order-lg-1" data-aos="fade-right">
+                  <div class="service card">
+                    <img src="assets/img/bookkeeping.jpg" alt="Service 1 Image" class="card-img-top img-fluid">
+                  </div>
+              </div>
+              <div class="col-lg-8 col-md-6 col-sm-12 order-lg-2" data-aos="fade-left">
+                <div class="">
+                  <div class="service card">
+                    <div class="card-body">
+                      <h3 class="card-title">Bookkeeping Services</h3>
+                      <div class="makeitcapital">
+                        <p class="text-justify lead" style="font-size: medium;">
+                          Effective bookkeeping is the cornerstone of any successful business. At Squadup Accounting Services, our bookkeeping services are meticulously designed to handle your financial records with precision and care. We understand that every transaction holds significance, whether it's an invoice, expense, or revenue entry. Our dedicated team ensures that your books are accurate, up-to-date, and compliant with accounting standards.
+                         
+                        </p>
+                        <p class="text-justify lead" style="font-size: medium;">
+                       
+                          We tailor our bookkeeping services to match your business's unique needs. Whether you require monthly, quarterly, or annual support, we're equipped to manage your financial records efficiently. From organizing receipts and categorizing expenses to reconciling accounts, our comprehensive approach ensures that your financial data is in order.
+                         
+                        </p>
+                      </div>
+                      <div class="expand-text">
+                        <p class="text-justify lead" style="font-size: medium;">
+                          With our services, you gain a clearer picture of your business's financial health. Accurate bookkeeping empowers you to make informed decisions, plan for growth, and identify areas for optimization. By partnering with us, you free up valuable time and resources, allowing you to focus on core business activities while we handle the complexities of maintaining your financial records.
+                        </p>
+                      </div>
+                      <p class="expand-link">...See More</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row" data-aos="fade-up">
+              <div class="col-lg-4 col-md-6 col-sm-12 order-lg-2" data-aos="fade-right">
+                  <div class="service card">
+                    <img src="assets/img/Tax.jpg" alt="Service 1 Image" class="card-img-top img-fluid">
+                  </div>
+              </div>
+              <div class="col-lg-8 col-md-6 col-sm-12 order-lg-1"  data-aos="fade-left">
+                <div class="">
+                  <div class="service card">
+                    <div class="card-body">
+                      <h3 class="card-title">Tax Compliance</h3>
+                      <div class="makeitcapital">
+                        <p class="text-justify lead" style="font-size: medium;">
+                          Navigating the ever-evolving landscape of tax regulations can be daunting. Our team of tax compliance experts specializes in ensuring that your business stays compliant with tax laws in Australia, Canada, the UK, and Ireland. We stay abreast of the latest tax codes, deductions, and credits to maximize your benefits while minimizing tax liabilities.
+                        </p>
+                        <p class="text-justify lead" style="font-size: medium;">
+                          Our comprehensive tax compliance services cover various aspects, including corporate tax, VAT/GST, payroll taxes, and more. We meticulously prepare and file your tax returns, ensuring accuracy and timeliness in submissions. By leveraging our expertise, you mitigate the risks associated with non-compliance and avoid potential penalties or audits.
+                        </p>
+                      </div>
+                      <div class="expand-text">
+                        <p class="text-justify lead" style="font-size: medium;">
+                          We understand that tax planning is integral to sound financial management. Our proactive approach involves strategic tax planning throughout the year, identifying opportunities for tax savings and optimizing your tax position. With our guidance, you gain peace of mind, knowing that your tax obligations are met while capitalizing on available tax advantages within the legal framework.
+                        </p>
+                        <p class="text-justify lead" style="font-size: medium;">
+                          Partnering with Squadup Accounting for tax compliance allows you to focus on your business's growth while we navigate the complexities of the ever-changing tax landscape on your behalf.
+                        </p>
+                      </div>
+                      <p class="expand-link">...See More</p>
+                      
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
 
         
-
-
+      <div class="row" data-aos="fade-up">
+        <div class="col-lg-4 col-md-6 col-sm-12 order-lg-1" data-aos="fade-right">
+            <div class="service card">
+              <img src="assets/img/Financial statement pic.jpg" alt="Service 1 Image" class="card-img-top img-fluid">
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-12 order-lg-2" data-aos="fade-left">
+          <div class="">
+            <div class="service card">
+              <div class="card-body">
+                <h3 class="card-title">Financial Reporting</h3>
+                <div class="makeitcapital">
+                  <p class="text-justify lead" style="font-size: medium;">
+                    Clear and comprehensive financial reporting is indispensable for any business striving for growth and success. At Squadup Accounting Services, our financial reporting services go beyond mere numbers. We provide detailed, customized reports that offer invaluable insights into your company's financial health.
+                  </p>
+                  <p class="text-justify lead" style="font-size: medium;">
+                    Our team meticulously analyzes your financial data to create reports tailored to your specific needs. These reports encompass a wide range of financial aspects, including balance sheets, cash flow statements, income statements, and more. We present this information in a clear, understandable format, empowering you to make well-informed strategic decisions.
+                  </p>
+                </div>
+                <div class="expand-text">
+                  <p class="text-justify lead" style="font-size: medium;">
+                    By collaborating with us for financial reporting, you gain a deeper understanding of your company's performance metrics and key financial indicators. These insights allow you to identify trends, forecast future financial scenarios, and develop strategies to maximize profitability and efficiency.
+                  </p>
+                  <p class="text-justify lead" style="font-size: medium;">
+                    We recognize that each business has unique reporting requirements. Our flexible approach ensures that our reports align with your specific goals and preferences. Whether you need monthly, quarterly, or annual reports, we deliver accurate, timely, and detailed analyses that serve as a roadmap for your financial journey.
+                  </p>
+                  <p class="text-justify lead" style="font-size: medium;">
+                    Moreover, our team remains attentive to regulatory changes and industry standards, ensuring that your financial reports comply with all relevant guidelines and regulations in Australia, Canada, the UK, and Ireland.
+                  </p>
+                  <p class="text-justify lead" style="font-size: medium;">
+                    At Squadup Accounting Services, we don't just offer financial reports; we provide you with actionable insights. Our goal is to equip you with the information necessary to make sound financial decisions, capitalize on opportunities, and drive your business toward sustained success.
+                  </p>
+                  <p class="text-justify lead" style="font-size: medium;">
+                    Partner with us for comprehensive financial reporting services and unlock the power of data-driven decision-making for your business.
+                  </p>
+                </div>
+                <p class="expand-link">...See More</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section><!-- End About Section -->
 
-    <!-- ======= Steps Section ======= -->
-    <section id="steps" class="steps about section-bg">
-      <div class="container flex-column">
 
-        <div class="section-title" data-aos="fade-up">
-          <h2>Services</h2>
+
+
+      <div class="row" data-aos="fade-up">
+        <div class="col-lg-4 col-md-6 col-sm-12 order-lg-2" data-aos="fade-right">
+            <div class="service card">
+              <img src="assets/img/Payroll.jpg" alt="Service 1 Image" class="card-img-top img-fluid">
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-12 order-lg-1"  data-aos="fade-left">
+          <div class="">
+            <div class="service card">
+              <div class="card-body">
+                <h3 class="card-title">Payroll Services</h3>
+                <div class="makeitcapital">
+                  <p class="text-justify lead" style="font-size: medium;">
+                    Efficient payroll management is vital for any business to ensure employee satisfaction, regulatory compliance, and operational smoothness. At Squadup Accounting Services, our payroll services are designed to alleviate the complexities of managing payroll while ensuring accuracy, timeliness, and compliance.
+                  </p>
+                  <p class="text-justify lead" style="font-size: medium;">
+                    We understand that handling payroll involves more than just issuing paychecks. Our dedicated team manages various aspects of payroll administration, including calculating salaries, handling deductions, managing benefits, and ensuring compliance with tax regulations and employment laws in Australia, Canada, the UK, and Ireland.
+                  </p>
+                </div>
+                <div class="expand-text">
+                  <p class="text-justify lead" style="font-size: medium;">
+                    By partnering with us, you streamline your payroll process, freeing up valuable time and resources. Our advanced payroll systems and experienced professionals ensure that your employees are compensated accurately and punctually, fostering a positive work environment and enhancing employee satisfaction.
+                    
+                  </p>
+                  <p class="text-justify lead" style="font-size: medium;">
+                    Our personalized approach allows for flexibility based on your specific payroll needs. Whether you have a small team or a large workforce, our scalable solutions cater to businesses of all sizes. We handle all payroll-related tasks efficiently, including direct deposits, tax filings, year-end documentation, and more.
+                  </p>
+                  <p class="text-justify lead" style="font-size: medium;">
+                    Moreover, staying updated with payroll regulations and changes in employment laws is crucial. Our team remains vigilant about updates and ensures that your payroll processes comply with the latest legal requirements. This minimizes the risk of penalties or compliance issues for your business.
+                  </p>
+                  <p class="text-justify lead" style="font-size: medium;">
+                    Partnering with Squadup Accounting Services, for payroll services not only simplifies your payroll processes but also provides you with peace of mind. Focus on growing your business while we manage the intricacies of payroll, ensuring your employees are compensated accurately and on time.
+                  </p>
+                </div>
+                <p class="expand-link">...See More</p>
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+         
+<div class="row" data-aos="fade-up">
+  <div class="col-lg-4 col-md-6 col-sm-12 order-lg-1" data-aos="fade-right">
+      <div class="service card">
+        <img src="assets/img/advisory.jpg" alt="Service 1 Image" class="card-img-top img-fluid">
+      </div>
+  </div>
+  <div class="col-lg-8 col-md-6 col-sm-12 order-lg-2" data-aos="fade-left">
+    <div class="">
+      <div class="service card">
+        <div class="card-body">
+          <h3 class="card-title">Advisory Services</h3>
+          <div class="makeitcapital">
+            <p class="text-justify lead" style="font-size: medium;">
+              Squadup Accounting advisory services are designed to offer strategic financial guidance and support, empowering businesses to make informed decisions for sustainable growth and success. We go beyond traditional accounting practices, serving as your trusted advisors to navigate the complexities of financial management.
+            </p>
+            <p class="text-justify lead" style="font-size: medium;">
+              Our team comprises seasoned professionals with extensive expertise in various industries and a deep understanding of local and international financial landscapes. We work closely with you to comprehend your business goals, challenges, and aspirations, offering tailored solutions to address your unique needs.
+ </p>
+          </div>
+          <div class="expand-text">
+            <p class="text-justify lead" style="font-size: medium;">
+              Through meticulous analysis of your financial data, market trends, and industry benchmarks, we provide actionable insights and recommendations. Whether you seek guidance on expansion strategies, cost optimization, risk management, investment decisions, or long-term financial planning, our advisory services cover a broad spectrum of financial aspects.
+            </p>
+            <p class="text-justify lead" style="font-size: medium;">
+              We act as your strategic partners, collaborating to enhance your business's financial performance and resilience. Our proactive approach involves continuous monitoring, trend analysis, and scenario planning to anticipate challenges and identify opportunities that drive growth.
+            </p>
+            <p class="text-justify lead" style="font-size: medium;">
+              Moreover, we prioritize clear communication and transparency throughout our advisory process. We ensure that you have a comprehensive understanding of the strategies recommended, empowering you to make confident and well-informed decisions that align with your business objectives.
+            </p>
+            <p class="text-justify lead" style="font-size: medium;">
+              Our commitment extends beyond providing recommendations; we strive to be a dependable resource for your business's success. Whether you're a startup looking for financial guidance or an established company aiming to optimize operations, our advisory services are tailored to add tangible value to your business.
+            </p>
+            <p class="text-justify lead" style="font-size: medium;">
+              Partner with Squadup Accounting Services, for comprehensive advisory services that propel your business toward sustained growth, profitability, and resilience in today's dynamic market landscape.
+     </p>
+          </div>
+          <p class="expand-link">...See More</p>
           
         </div>
-
-        <div class="row">
-          
-          <div class="col">
-
-          <div class="icon-box info-div" data-aos="fade-up">
-            <i class="bx bx-cube-alt"></i>
-            <h6>Annual Accounts</h6>
-          </div>
-            
-
-            <div class="icon-box" data-aos="fade-up" >
-              <i class="bx bx-cube-alt"></i>
-              <h6>Taxation Outsourcing</h6>
-            </div>
-
-            <div class="icon-box" data-aos="fade-up">
-              <i class="bx bx-cube-alt"></i>
-              <h6>Bookkeeping Services</h6>
-            </div>
-
-          </div>
-          <div class="col">
-            <div class="icon-box" data-aos="fade-up">
-              <i class="bx bx-cube-alt"></i>
-              <h7>Payroll Services</h7>
-            </div>
-
-            <div class="icon-box" data-aos="fade-up">
-              <i class="bx bx-cube-alt"></i>
-              <h6>Management Reports</h6>
-            </div>
-          </div>
-
-        </div>
-
-
-
       </div>
-    </section><!-- End Steps Section -->
+    </div>
+  </div>
+</div>
+
+
+         </div>
+        </section><!-- End About Section -->
+
+
+
 
 
     <!-- ======= Contact Section ======= -->
@@ -312,6 +575,52 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const expandLinks = document.querySelectorAll('.expand-link');
+      expandLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          const content = this.parentElement.querySelector('.expand-text');
+          if (content) {
+            content.style.display = content.style.display === '' || content.style.display === 'none' ? 'block' : 'none';
+            this.textContent = content.style.display === 'none' ? '...See More' : '...See Less';
+          }
+        });
+      });
+
+      function toggleApproachContent() {
+      if (window.innerWidth >= 768) {
+        approachContent.style.display = 'block';
+      } else {
+        approachContent.style.display = approachContent.style.display === 'none' || approachContent.style.display === '' ? 'block' : 'none';
+      }
+    }
+
+    function toggleApproachContent2() {
+      if (window.innerWidth >= 768) {
+        approachContent2.style.display = 'block';
+      } else {
+        approachContent2.style.display = approachContent2.style.display === 'none' || approachContent2.style.display === '' ? 'block' : 'none';
+      }
+    }
+
+    const approachToggle = document.getElementById('approach-toggle');
+    const approachContent = document.querySelector('.approach-content');
+
+    approachToggle.addEventListener('click', function() {
+      toggleApproachContent();
+    });
+
+    const approachToggle2 = document.getElementById('approach-toggle2');
+    const approachContent2 = document.querySelector('.approach-content2');
+
+    approachToggle2.addEventListener('click', function() {
+      toggleApproachContent2();
+    });
+
+
+    });
+  </script>
 
 </body>
 
