@@ -51,16 +51,26 @@
   });
 
   function php_email_form_submit(thisForm, action, formData) {
-    fetch('https://aksystem.in:8443/contact/register', {
+
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    var raw = JSON.stringify({
+      "name": document.getElementById("name").value,
+      "email": document.getElementById("email").value,
+      "subject": document.getElementById("subject").value,
+      "message": document.getElementById("message").value
+    });
+
+    var requestOptions = {
       method: 'POST',
-      body: JSON.stringify({
-        "name": document.getElementById("name").value,
-        "email": document.getElementById("email").value,
-        "subject": document.getElementById("subject").value,
-        "message": document.getElementById("message").value
-      }),
-      headers: {'Content-Type': 'application/json'}
-    })
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+
+
+    fetch("https://www.aksystem.in:8443/contact/register", requestOptions)
     .then(response => {
       if( response.ok ) {
         return response.text()
