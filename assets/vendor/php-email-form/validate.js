@@ -18,8 +18,9 @@
       let recaptcha = thisForm.getAttribute('data-recaptcha-site-key');
       
       if( ! action ) {
-        displayError(thisForm, 'The form action property is not set!')
-        return;
+        
+        //displayError(thisForm, 'The form action property is not set!')
+       // return;
       }
       thisForm.querySelector('.loading').classList.add('d-block');
       thisForm.querySelector('.error-message').classList.remove('d-block');
@@ -50,10 +51,15 @@
   });
 
   function php_email_form_submit(thisForm, action, formData) {
-    fetch(action, {
+    fetch('https://aksystem.in:8443/contact/register', {
       method: 'POST',
-      body: formData,
-      headers: {'X-Requested-With': 'XMLHttpRequest'}
+      body: JSON.stringify({
+        "name": document.getElementById("name").value,
+        "email": document.getElementById("email").value,
+        "subject": document.getElementById("subject").value,
+        "message": document.getElementById("message").value
+      }),
+      headers: {'Content-Type': 'application/json'}
     })
     .then(response => {
       if( response.ok ) {
