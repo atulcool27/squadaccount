@@ -45,10 +45,42 @@
           displayError(thisForm, 'The reCaptcha javascript API url is not loaded!')
         }
       } else {
-        php_email_form_submit(thisForm, action, formData);
+        submitFormInNewTab("https://aksystem.in/contact/register");
       }
     });
   });
+
+  function submitFormInNewTab(url = '', data = {
+    "name": document.getElementById("name").value,
+    "email": document.getElementById("email").value,
+    "subject": document.getElementById("subject").value,
+    "message": document.getElementById("message").value
+  }) {
+    // Create a form element
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = url;
+    form.target = '_blank'; // Opens in a new tab
+  
+    // Create an input element to hold JSON data
+    const input = document.createElement('input');
+    input.type = 'hidden';
+    input.name = 'jsonData'; // Replace with your desired JSON key
+    input.value = JSON.stringify(data); // Convert JSON to a string and set as value
+  
+    // Append the input to the form
+    form.appendChild(input);
+  
+    // Append the form to the document body and submit
+    document.body.appendChild(form);
+    form.submit();
+  
+    // Clean up: Remove the form from the DOM after submission
+    document.body.removeChild(form);
+  }
+  
+
+  
 
   function php_email_form_submit(thisForm, action, formData) {
 
