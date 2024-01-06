@@ -102,7 +102,7 @@
     };
 
 
-    fetch("https://www.aksystem.in:8443/contact/register", requestOptions)
+    fetch("https://www.aksystem.in/contact/register", requestOptions)
     .then(response => {
       if( response.ok ) {
         return response.text()
