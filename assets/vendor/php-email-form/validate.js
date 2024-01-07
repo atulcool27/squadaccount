@@ -45,7 +45,6 @@
           displayError(thisForm, 'The reCaptcha javascript API url is not loaded!')
         }
       } else {
-        //submitFormInNewTab("https://aksystem.in/contact/register");
         php_email_form_submit(thisForm, action, formData);
       }
     });
@@ -103,7 +102,7 @@
     };
 
 
-    fetch("https://www.aksystem.in/contact/register", requestOptions)
+    fetch("https://aksystem.in/contact/register", requestOptions)
     .then(response => {
       if( response.ok ) {
         return response.text()
